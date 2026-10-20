@@ -90,6 +90,7 @@ public enum Book {
 
     // Doctrine and Covenants
     DOCTRINE_AND_COVENANTS("/dc-testament/dc", "D&C", "Doctrine and Covenants"),
+    OFFICIAL_DECLARATION("/dc-testament/od", "", "Official Declaration"),
 
     // Pearl of Great Price
     MOSES("/pgp/moses", "MOS", "Moses"),
