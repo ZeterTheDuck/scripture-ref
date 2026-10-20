@@ -1,5 +1,8 @@
 package com.zeter.enums;
 
+/**
+ * Representation of a book of scripture
+ */
 public enum Book {
     // Old Testament
     GENESIS("/ot/gen", "GEN", "Genesis"),
