@@ -17,4 +17,18 @@ public class RefParser {
 
         return output;
     }
+
+    /**
+     * Parses a scripture reference into a list of verses
+     * 
+     * @param reference URI href to a verse, where the URL is the book and chapter, and the query parameters is the verse
+     * @return an ordered list containing the scripture references
+     */
+    public static List<String> parseRefUri(String uri) {
+        ArrayList<String> output = new ArrayList<>();
+
+        // TODO something
+
+        return output;
+    }
 }
