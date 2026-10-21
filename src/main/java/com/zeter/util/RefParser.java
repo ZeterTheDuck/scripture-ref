@@ -10,7 +10,7 @@ public class RefParser {
      * @param reference reference of verses. Can be a single verse, range of verses, or disjointed collection of verses, as well as different chapters or books
      * @return an ordered list containing the scripture references
      */
-    public static List<String> parseRef(String reference) {
+    public static List<String> parseRefPlain(String reference) {
         ArrayList<String> output = new ArrayList<>();
 
         // TODO something

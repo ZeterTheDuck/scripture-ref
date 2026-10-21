@@ -12,19 +12,19 @@ public class TestRefParser {
     public void testSingleVerse() {
         String expectedOutput = "1 Nephi 3:7";
 
-        List<String> output = RefParser.parseRef(expectedOutput);
+        List<String> output = RefParser.parseRefPlain(expectedOutput);
 
         assertEquals(1, output.size());
         assertEquals(expectedOutput, output.get(0));
     }
 
-    @Test // a range of verses, such as "1—4"
+    @Test // a range of verses, such as "1–4"
     public void testVerseRange() {
         String testString = "Mosiah 18:8–10";
 
         String[] testArr = {"Mosiah 18:8", "Mosiah 18:9", "Mosiah 18:10"};
 
-        List<String> output = RefParser.parseRef(testString);
+        List<String> output = RefParser.parseRefPlain(testString);
 
         assertEquals(3, output.size());
         for (int i = 0; i < testArr.length; i++) {
