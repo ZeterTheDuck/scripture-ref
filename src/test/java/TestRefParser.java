@@ -34,7 +34,7 @@ public class TestRefParser {
 
     @Test // multiple verses that are not connected, like "1, 3"
     public void testDisjointedVerses() {
-
+        String testString = "Isaiah 41:1, 3";
     }
 
     @Test // multiple verses that are next to each other, but don't use a en dash like "1, 2"
@@ -44,17 +44,27 @@ public class TestRefParser {
 
     @Test // both multiple verses and a range of verses, like "1–3, 5"
     public void testRangeAndDisjointedVerses() {
+        String testString = "D&C 121:36, 41–42";
+    }
+
+    @Test // verses with context, like "1 Nephi 1:1 (1–2)"
+    public void testVersesWithContext() {
+        String testString = "1 Nephi 1:1 (1–2)";
+    }
+
+    @Test // an entire chapter
+    public void testEntireChapter() {
 
     }
 
-    @Test // multiple chapters, like "1 Nephi 1—2"
+    @Test // multiple chapters, like "1 Nephi 1:4; 2:8"
     public void testMultipleChapters() {
 
     }
 
     @Test // multiple chapters with verses
     public void testMultipleChaptersVerses() {
-        
+
     }
 
     @Test // multiple books
