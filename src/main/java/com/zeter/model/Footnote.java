@@ -22,7 +22,7 @@ public class Footnote {
     private List<CrossReference> references;
 
     /**
-     * Creates a footnote from source text. References and footnote type are interpreted from the source text
+     * Creates a footnote from source text. References and footnote type are parsed from the source text
      * 
      * @param text the text of the footnote
      */
@@ -41,7 +41,7 @@ public class Footnote {
      * Adds a reference to this footnote
      * 
      * @param reference the text of the reference, for instance "Mosiah 18:8–10"
-     * @return true if the reference was processed and the footnote was added successfully, or false if it was not
+     * @return true if the reference was parsed and the footnote was added successfully, or false if it was not
      */
     public boolean addReference(String reference) {
         // STUB
